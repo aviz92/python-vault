@@ -1,6 +1,6 @@
-import logging
 import os
 import hvac
+from custom_python_logger import get_logger
 
 
 class VaultClient:
@@ -11,7 +11,7 @@ class VaultClient:
             vault_secret_id: str = None,
             vault_mount: str = None
     ):
-        self.logger = logging.getLogger(self.__class__.__name__)
+        self.logger = get_logger(self.__class__.__name__)
 
         self.vault_addr = vault_addr or os.getenv("VAULT_ADDR")
         self.vault_role_id = vault_role_id or os.getenv("VAULT_ROLE_ID")
