@@ -4,4 +4,4 @@ from python_vault.vault import VaultClient
 
 load_dotenv()
 
-__all__ = ['VaultClient']
+__all__ = ["VaultClient"]
