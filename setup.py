@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_version = "0.0.2"
+package_version = "0.0.3"
 
 package_name = "python-vault"
 package_description = "A Python client for HashiCorp Vault with AppRole authentication and secret management."
