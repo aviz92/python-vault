@@ -1,9 +1,0 @@
-setuptools
-wheel
-python-dotenv
-pre-commit
-colorlog
-pytest
-pytest-rerunfailures
-hvac
-custom_python_logger

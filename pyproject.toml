@@ -1,3 +1,43 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-vault"
+version = "0.0.4"
+description = "A Python client for HashiCorp Vault with AppRole authentication and secret management."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Avi Zaguri" },]
+keywords = ["development", "vault", "secrets", "client"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Logging",
+]
+
+dependencies = [
+    "colorlog>=6.10.1",
+    "custom-python-logger>=2.0.10",
+    "hvac>=2.4.0",
+    "pre-commit>=4.5.0",
+    "pytest>=9.0.1",
+    "pytest-rerunfailures>=16.1",
+    "python-dotenv>=1.2.1",
+    "setuptools>=80.9.0",
+    "wheel>=0.45.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/aviz92/python-vault"
+Repository = "https://github.com/aviz92/python-vault"
+Issues = "https://github.com/aviz92/python-vault/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["python_vault*"]
+namespaces = false
