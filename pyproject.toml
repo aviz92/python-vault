@@ -22,7 +22,7 @@ classifiers = [
 
 dependencies = [
     "colorlog>=6.10.1",
-    "custom-python-logger>=2.0.10",
+    "custom-python-logger>=4.0.0",
     "hvac>=2.4.0",
     "pre-commit>=4.5.0",
     "pytest>=9.0.1",

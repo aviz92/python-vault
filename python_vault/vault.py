@@ -3,12 +3,14 @@ import os
 import hvac
 from custom_python_logger import get_logger
 
+from python_vault.const import LOGGER_NAME
+
 
 class VaultClient:
     def __init__(
         self, vault_addr: str = None, vault_role_id: str = None, vault_secret_id: str = None, vault_mount: str = None
     ) -> None:
-        self.logger = get_logger(self.__class__.__name__)
+        self.logger = get_logger(LOGGER_NAME)
 
         self.vault_addr = vault_addr or os.getenv("VAULT_ADDR")
         self.vault_role_id = vault_role_id or os.getenv("VAULT_ROLE_ID")
