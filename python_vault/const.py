@@ -1,1 +1,1 @@
-LOGGER_NAME = "python-vault"
+LOGGER_NAME = "python_vault"
